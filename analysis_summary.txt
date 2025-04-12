@@ -1,0 +1,42 @@
+Analysis Summary for Crash Reporting Data
+========================================
+Total Crashes Analyzed: 10000
+
+Key Findings:
+1. Crashes by Hour: Sabse zyada crashes raat 10-12 baje ke beech hote hain (17 hour pe).
+2. Driver Substance Abuse: 16.33% crashes mein substance abuse unknown tha.
+3. Speed Limit: Zyada crashes 35 mph speed limit wale roads pe hote hain.
+4. Day of Week: Friday ko sabse zyada crashes hote hain.
+5. Injury Severity: NO APPARENT INJURY severity wale crashes sabse zyada hain.
+6. Gender Trends: 49.7% crashes males mein hue (dummy data).
+7. Driver Age Distribution: Average age 49 years, peak 47 years (dummy data).
+8. License Status: 10.26% crashes valid license wale drivers se (dummy data).
+
+Correlation Analysis:
+              Speed Limit  Vehicle Year  Latitude  Longitude      Hour  Driver Age
+Speed Limit      1.000000      0.049732  0.108792  -0.013277 -0.006703   -0.008200
+Vehicle Year     0.049732      1.000000  0.013091   0.003602 -0.016521   -0.030006
+Latitude         0.108792      0.013091  1.000000  -0.577829 -0.000972   -0.003641
+Longitude       -0.013277      0.003602 -0.577829   1.000000 -0.002629    0.002241
+Hour            -0.006703     -0.016521 -0.000972  -0.002629  1.000000   -0.001517
+Driver Age      -0.008200     -0.030006 -0.003641   0.002241 -0.001517    1.000000
+
+Covariance Analysis:
+              Speed Limit   Vehicle Year  Latitude  Longitude       Hour  Driver Age
+Speed Limit    125.095746     177.144521  0.086397  -0.014581  -0.393209   -1.635415
+Vehicle Year   177.144521  101425.633646  0.296026   0.112636 -27.594421 -170.392867
+Latitude         0.086397       0.296026  0.005042  -0.004029  -0.000362   -0.004610
+Longitude       -0.014581       0.112636 -0.004029   0.009641  -0.001354    0.003923
+Hour            -0.393209     -27.594421 -0.000362  -0.001354  27.507133   -0.141836
+Driver Age      -1.635415    -170.392867 -0.004610   0.003923  -0.141836  317.943855
+
+Visualizations:
+1. Crashes by Hour: See 'crashes_by_hour_enhanced.png'
+2. Crashes by Substance Abuse: See 'crashes_by_substance_enhanced.png'
+3. Crashes by Speed Limit: See 'crashes_by_speed_enhanced.png'
+4. Crashes by Day of Week: See 'crashes_by_day_enhanced.png'
+5. Crashes by Injury Severity: See 'crashes_by_injury_severity_fixed.png'
+6. Crashes by Gender: See 'crashes_by_gender.png'
+7. Driver Age Distribution: See 'driver_age_distribution.png'
+8. Crashes by License Status: See 'crashes_by_license_status.png'
+9. Correlation Heatmap: See 'correlation_heatmap.png'
